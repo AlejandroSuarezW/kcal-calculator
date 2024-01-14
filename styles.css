@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    @apply font-sans font-normal
+}
+
+.fontSize {
+	&-title {
+		font-size: 130px;
+        -webkit-text-stroke: thin;
+	}
+	&-lg {
+		font-size: 40px;
+        @apply font-semibold;
+	}
+	&-md {
+		font-size: 32px;
+	}
+	&-sm {
+		font-size: 16px;
+	}
+}
+
+.color {
+	&-hover:hover{
+		@apply text-indigo-800 ;
+	}
+	&-primary {
+		@apply text-indigo-600;
+	}
+	&-light {
+		@apply text-indigo-100;
+	}
+	&-black {
+		color: #0f0f0f;
+	}
+}
+.bg {
+	&-hover:hover{
+		@apply bg-indigo-800;
+	}
+	&-primary{
+		@apply bg-indigo-600;
+	}
+	&-light {
+		@apply bg-indigo-100;
+	}
+	&-black {
+		background-color: #0f0f0f;
+	}
+	&-pagePrimary {
+		background-color: white;
+	}
+	&-pageSecondary {
+		@apply bg-zinc-100;
+	}
+}
+.fill {
+	&-hover:hover{
+		@apply fill-indigo-800;
+	}
+	&-primary {
+		@apply fill-indigo-600;
+	}
+	&-light {
+		@apply fill-indigo-100;
+	}
+}
+.border{
+	&-hover:hover{
+		@apply border-indigo-800;
+	}
+	&-primary {
+		@apply border-indigo-600;
+	}
+	&-light {
+		@apply border-indigo-100;
+	}
+}
+
+.header-btn{
+	@apply flex w-12 h-12 bg-primary p-2 rounded-md fill-light bg-hover
+}
+
